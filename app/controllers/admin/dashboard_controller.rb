@@ -5,5 +5,6 @@ class Admin::DashboardController < ApplicationController
   end
 end
 
-# Display a count of how many products are in the database
-# Display a count of how many categories are in the database
+# Stretch
+# Try to make it look nice, using Bootstrap 3 elements.
+# Link to the product and category admin list/index pages when displaying the counts.
