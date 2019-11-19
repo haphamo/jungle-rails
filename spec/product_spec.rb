@@ -16,7 +16,7 @@ RSpec.describe Product, type: :model do
       category = Category.find_or_create_by! name: 'Apparel'
       product = Product.new(name: nil)
       expect(product).to_not be_valid
-      puts product.errors.full_messages
+      
     end
     
     it "is not valid with without a price" do
@@ -34,7 +34,7 @@ RSpec.describe Product, type: :model do
     it "is not valid with without a category" do
       product = Product.new(category: nil)
       expect(product).to_not be_valid
+      # puts product.errors.full_messages
     end
   end
-  
 end
