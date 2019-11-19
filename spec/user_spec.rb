@@ -68,7 +68,7 @@ RSpec.describe User, type: :model do
 
     it 'should still authenicate and allow the user to log in if there are spaces in the email' do
       User.create(name: "Ha Pham", email: "ha.phamo@hotmail.com", password: '12345', password_confirmation: '12345')
-      result = User.authenticate_with_credentials('  Ha.phamo@hotmail.com', '12345')
+      result = User.authenticate_with_credentials('  Ha.PhamO@hotmail.com', '12345')
       expect(result).to be_truthy
     end
   end
